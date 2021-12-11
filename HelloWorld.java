@@ -15,12 +15,15 @@
  *  lines in our programs and encourage you to do the same.
  *
  ******************************************************************************/
-
+import java.util.Scanner;  
 public class HelloWorld {
 
     public static void main(String[] args) {
-        // Prints "Hello World, DevOps has arrived!" to the terminal window.
-        System.out.println("Hello World, DevOps has arrived!");
+        Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+    System.out.println("Enter username");
+
+    String userName = myObj.nextLine();  // Read user input
+    System.out.println("Username is: " + userName);  // Output user input
     }
 
 }
